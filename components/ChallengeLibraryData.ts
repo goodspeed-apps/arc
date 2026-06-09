@@ -1,0 +1,133 @@
+export interface LibraryChallenge {
+  id: string;
+  name: string;
+  category: 'Discipline' | 'Sobriety' | 'Fitness' | 'Focus' | 'Mindset';
+  duration_days: number;
+  difficulty: 'Easy' | 'Medium' | 'Hard';
+  description: string;
+  commitments: string[];
+  completion_rate?: number;
+}
+
+export const LIBRARY_CHALLENGES: LibraryChallenge[] = [
+  {
+    id: 'no-alcohol-30',
+    name: '30-Day No Alcohol',
+    category: 'Sobriety',
+    duration_days: 30,
+    difficulty: 'Medium',
+    description: "Commit to 30 days without alcohol. Reset your relationship with drinking, improve sleep quality, and rediscover how you feel in your natural state.",
+    commitments: ['No alcohol of any kind', 'Log daily how you feel', 'Replace with a drink ritual'],
+    completion_rate: 0.61,
+  },
+  {
+    id: 'cold-shower-21',
+    name: '21-Day Cold Showers',
+    category: 'Discipline',
+    duration_days: 21,
+    difficulty: 'Hard',
+    description: 'End every shower with at least 60 seconds of cold water. Build mental grit, boost circulation, and start each day with a win.',
+    commitments: ['60s minimum cold water', 'Must be daily, no skips', 'Log temp and duration'],
+    completion_rate: 0.54,
+  },
+  {
+    id: 'no-social-14',
+    name: '14-Day No Social Media',
+    category: 'Focus',
+    duration_days: 14,
+    difficulty: 'Medium',
+    description: 'Two weeks completely off social media. Reclaim your attention, reduce comparison anxiety, and rediscover boredom as a creative catalyst.',
+    commitments: ['Delete apps from phone', 'No browser workarounds', 'Journal each evening'],
+    completion_rate: 0.72,
+  },
+  {
+    id: 'daily-walk-30',
+    name: '30-Day Daily Walk',
+    category: 'Fitness',
+    duration_days: 30,
+    difficulty: 'Easy',
+    description: 'Walk for at least 30 minutes every single day. A gentle commitment that compounds into lasting habit and meaningful mental clarity.',
+    commitments: ['30 min minimum walk', 'No treadmills, outside only', 'Log steps or distance'],
+    completion_rate: 0.83,
+  },
+  {
+    id: 'meditation-30',
+    name: '30-Day Daily Meditation',
+    category: 'Mindset',
+    duration_days: 30,
+    difficulty: 'Easy',
+    description: 'Sit in stillness for 10 minutes every morning. Reduce reactive thinking, improve focus, and build a daily anchor of calm.',
+    commitments: ['10 min each morning', 'Before checking your phone', 'Log how you feel after'],
+    completion_rate: 0.78,
+  },
+  {
+    id: 'no-sugar-14',
+    name: '14-Day No Added Sugar',
+    category: 'Discipline',
+    duration_days: 14,
+    difficulty: 'Hard',
+    description: 'Cut all added sugar for two weeks. Reset your palate, reduce inflammation, and expose hidden dependencies in your diet.',
+    commitments: ['No added sugars or syrups', 'Read every food label', 'Natural fruit is allowed'],
+    completion_rate: 0.48,
+  },
+  {
+    id: 'reading-21',
+    name: '21-Day Read Every Day',
+    category: 'Focus',
+    duration_days: 21,
+    difficulty: 'Easy',
+    description: 'Read at least 20 pages of a real book every day. Replace passive scrolling with deliberate learning or imagination.',
+    commitments: ['20 pages minimum', 'Physical or e-reader only', 'Note one insight daily'],
+    completion_rate: 0.80,
+  },
+  {
+    id: 'no-caffeine-10',
+    name: '10-Day Caffeine Reset',
+    category: 'Sobriety',
+    duration_days: 10,
+    difficulty: 'Hard',
+    description: 'Go fully caffeine-free for 10 days. Break chemical dependence, discover your natural energy rhythms, and sleep deeper.',
+    commitments: ['No coffee, tea, or energy drinks', 'Log energy levels hourly', 'Stay hydrated, 3L water/day'],
+    completion_rate: 0.55,
+  },
+  {
+    id: 'journaling-30',
+    name: '30-Day Evening Journal',
+    category: 'Mindset',
+    duration_days: 30,
+    difficulty: 'Easy',
+    description: "Five minutes of writing every evening. Process the day, surface patterns, and build a clearer picture of what you actually want.",
+    commitments: ['5 min minimum writing', 'Before 10pm each night', 'Answer one prompt daily'],
+    completion_rate: 0.75,
+  },
+  {
+    id: 'workout-30',
+    name: '30-Day Workout Streak',
+    category: 'Fitness',
+    duration_days: 30,
+    difficulty: 'Medium',
+    description: 'Train your body every single day for 30 days. Even 20 minutes counts. Build identity as someone who shows up for themselves.',
+    commitments: ['20 min minimum movement', 'Log type and duration', 'Rest days = active recovery'],
+    completion_rate: 0.58,
+  },
+  {
+    id: 'no-news-7',
+    name: '7-Day News Detox',
+    category: 'Mindset',
+    duration_days: 7,
+    difficulty: 'Easy',
+    description: 'One week without consuming news in any form. Notice how your anxiety shifts when you stop feeding on headlines.',
+    commitments: ['No news apps or websites', 'No news podcasts or TV', 'Journal what you notice'],
+    completion_rate: 0.88,
+  },
+  {
+    id: 'gratitude-21',
+    name: '21-Day Gratitude Practice',
+    category: 'Mindset',
+    duration_days: 21,
+    difficulty: 'Easy',
+    description: 'Write three genuine things you are grateful for each morning. Rewire your default attention toward what is working.',
+    commitments: ['3 specific items each morning', 'Must be new each day', 'Write by hand if possible'],
+    completion_rate: 0.86,
+  },
+];
